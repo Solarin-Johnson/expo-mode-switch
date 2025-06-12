@@ -36,15 +36,12 @@ export default function RootLayout() {
           value={colorScheme === "dark" ? DarkTheme : DefaultTheme}
         >
           <Drawer
-            drawerContent={DrawerContent}
+            drawerContent={(props) => <DrawerContent {...props} />}
             screenOptions={{
               headerShown: false,
               drawerType: "front",
               swipeEdgeWidth: width,
               swipeMinDistance: width * 0.3,
-              drawerStyle: {
-                width: "80%",
-              },
             }}
           >
             <Drawer.Screen
