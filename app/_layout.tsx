@@ -79,6 +79,7 @@ function DrawerNavigator() {
             drawerType: "front",
             swipeEdgeWidth: width,
             swipeMinDistance: width * 0.3,
+            overlayColor: "#00000060",
           }}
         >
           <Drawer.Screen
