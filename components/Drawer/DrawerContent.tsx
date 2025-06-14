@@ -91,7 +91,7 @@ const DATA: DrawerData = {
 };
 
 const ANIMATION_DURATION = 450;
-const beizer = Easing.bezier(0.5, 0.25, 0.25, 1);
+const beizer = Easing.bezier(0.5, 0.25, 0.35, 1);
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
 const DrawerContent = memo(
@@ -226,7 +226,7 @@ const DrawerContent = memo(
     const sunAnimatedStyle = createIconAnimatedStyle(isDarkMode);
     const moonAnimatedStyle = createIconAnimatedStyle(
       isLightMode,
-      isLightMode ? ANIMATION_DURATION * 0.85 : 0,
+      isLightMode ? ANIMATION_DURATION * 0.65 : 0,
       isLightMode ? ANIMATION_DURATION : 0
     );
 
